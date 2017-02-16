@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Link} from 'react-router'
+
+
 
 class App extends Component {
   render() {
@@ -14,6 +17,10 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
            Ray is awesome
         </p>
+		<ul role="nav">
+		<li><Link to="/page1">page1</Link></li>
+		<li><Link to="/page2">page2</Link></li>
+		</ul>
       </div>
     );
   }
